@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RSVP for Jenny and Gareth's Wedding - May 2026">
+  <title>RSVP | Jenny & Gareth</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="rsvp-page">
+  <header>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="details.html">Details</a>
+      <a href="rsvp.html" class="active">RSVP</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="rsvp-container">
+      <h1>RSVP</h1>
+      <p>Please respond by [Date TBC]</p>
+      
+      <form id="rsvp-form" class="rsvp-form">
+        <!-- Form will be enhanced with proper backend integration -->
+        <div class="form-group">
+          <label for="guest-name">Full Name</label>
+          <input type="text" id="guest-name" name="guest-name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="attending">Will you be attending?</label>
+          <select id="attending" name="attending" required>
+            <option value="">Please select...</option>
+            <option value="yes">Joyfully Accept</option>
+            <option value="no">Regretfully Decline</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dietary">Dietary Requirements</label>
+          <textarea id="dietary" name="dietary"></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Send RSVP</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Jenny & Gareth</p>
+  </footer>
+</body>
+</html>
